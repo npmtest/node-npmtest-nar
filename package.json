@@ -1,1 +1,40 @@
-{     "devDependencies": {         "nar": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-nar",     "homepage": "https://github.com/npmtest/node-npmtest-nar",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-nar.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [nar (v0.3.40)](https://github.com/h2non/nar) [![npm package](https://img.shields.io/npm/v/npmtest-nar.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-nar) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-nar.svg)](https://travis-ci.org/npmtest/node-npmtest-nar)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "nar": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-nar",
+    "keywords": [
+        "coverage",
+        "test",
+        "nar"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_nar.js",
+    "name": "npmtest-nar",
+    "nameAlias": "npmtest_nar",
+    "nameOriginal": "npmtest-nar",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-nar.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
