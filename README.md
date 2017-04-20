@@ -1,4 +1,7 @@
-# test coverage for  [nar (v0.3.40)](https://github.com/h2non/nar)  [![npm package](https://img.shields.io/npm/v/npmtest-nar.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-nar) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-nar.svg)](https://travis-ci.org/npmtest/node-npmtest-nar)
+# npmtest-nar
+
+#### basic test coverage for  [nar (v0.3.40)](https://github.com/h2non/nar)  [![npm package](https://img.shields.io/npm/v/npmtest-nar.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-nar) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-nar.svg)](https://travis-ci.org/npmtest/node-npmtest-nar)
+
 #### node.js application archive
 
 [![NPM](https://nodei.co/npm/nar.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/nar)
